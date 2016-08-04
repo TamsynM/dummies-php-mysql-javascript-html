@@ -1,0 +1,23 @@
+.boldText {
+	font-weight: bold;
+}
+
+span {
+	font-style: italic;
+	font-size: 1.7em;
+	color: #0000FF;
+}
+
+body {
+	font-family: arial,helvetica,sans-serif;
+	font-size:90%;
+}
+
+.addBorder {
+	border: 3px double black;
+	padding: 5px;
+}
+
+div span{
+	background-color: #FF0000;
+}

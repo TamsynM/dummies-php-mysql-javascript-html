@@ -1,0 +1,13 @@
+body {
+	font-family: arial,helvetica,sans-serif;
+}
+
+#container {
+	margin: 0 30px;
+	background: #FFFFF0;
+}
+
+#content {
+	clear: left;
+	padding: 20px;
+}
