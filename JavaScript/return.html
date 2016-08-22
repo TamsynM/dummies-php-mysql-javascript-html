@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Javascript Chapter 2</title>
+	</head>
+	
+	<body>
+	
+		<h1>Here's another basic page</h1>
+		<script type="text/javascript">
+			
+			//Define the function
+			function addNumbers(num1, num2) {
+				if (isNaN(num1)) {
+					alert(num1 + " is not a number");
+				}
+				
+				else if (isNaN(num2)) {
+					alert(num2 + " is not a number");
+				}
+				
+				else {
+					var result = num1 + num2;
+					return result;
+				}
+			}
+			
+			//Call the function
+			var myResult = addNumbers(4, 2);
+		</script>
+
+	</body>
+</html>
