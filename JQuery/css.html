@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+		</script>
+		<style type="text/css">
+			.borderClass {
+				border: 3px solid black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Styles</h1>
+		<img alt="me" id="theImage" src="TAMTAMFACE.png" />
+		
+		<script type="text/javascript">
+			
+			$(document).ready(function() {
+				$("#theImage").addClass("borderClass");
+			});
+		</script>
+
+	</body>
+</html>

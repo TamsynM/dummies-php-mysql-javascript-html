@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Hover</title>
+		<script type="text/javascript" src="	https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+		</script>
+		
+		<style type="text/css">
+		.box {
+			margin: 50ox;
+			padding: 30px;
+			width: 50px;
+			border: 3px solid black;
+		}
+		
+		.colorBox {
+			background-color: #abacab;
+		}
+		</style>
+		
+	</head>
+
+	<body>
+		<h1>Hover</h1>
+		<hr>
+		<br />
+		<br />
+		<br />
+		<span class="box">Box 1</span>
+		<span class="box">Box 2</span>
+		<span class="box">Box 3</span>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".box").hover(function() {
+					$(this).addClass("colorBox");
+					}, function() {
+						$(this).removeClass("colorBox");
+					}
+				);
+			});
+			</script>
+	</body>
+</html>
