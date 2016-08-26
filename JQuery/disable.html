@@ -12,7 +12,7 @@
 		<hr>
 		<form action="#">
 			Billing Address same as Shipping Address:
-			<input type="checkbox" name="billingAddress" id="billingAddress">
+			<input type="checkbox" name="billingAddress" id="billing">
 			<br />
 			<br />
 			Street Address:
@@ -25,15 +25,19 @@
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("#billingAddress").click(function() {
-					if ($("#billingAddress").attr("checked") == "checked") {
+				$("#billing").click(function() {
+					if ($("#billing").is(":checked")) {
 						$(".baddr").val("");
-						$(".baddr").attr("disabled", "disabled");
-					} else if ($("#billingAddress").attr("checked") == undefined) {
+						$(".baddr").attr("disabled","disabled");
+						alert("Disable");
+					}
+					else {
 						$(".baddr").removeAttr("disabled");
+						alert("Enabled");
 					}
 				});
 			});
-			</script>
+		</script>
+			
 	</body>
 </html>
